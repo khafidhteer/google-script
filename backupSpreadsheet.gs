@@ -1,6 +1,6 @@
 // Khafidh Tri Ramdhani
 // February 03 2020
-// This script is made to copy the spreadsheet to backup folder
+// This script is made to copy the spreadsheet to the backup folder
 
 function backupSpreadsheet() {
 
