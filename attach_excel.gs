@@ -36,7 +36,8 @@ function attachExcel() {
   var url = "https://docs.google.com/spreadsheets/d/"+ ssID + "/export?format=xlsx&id="+ssID+"&gid="+shID;
   var result = UrlFetchApp.fetch(url, requestData);
   var contents = result.getContent();
+  var aname = name+date;
  
-  MailApp.sendEmail(recipients, subject, body, {cc:"address2@email.com",name: "Sender Name", attachments:[{fileName:name+".xlsx", content:contents, mimeType:"application//xlsx"}]});
+  MailApp.sendEmail(recipients, subject, body, {cc:"address2@email.com",name: "Sender Name", attachments:[{fileName:aname+".xlsx", content:contents, mimeType:"application//xlsx"}]});
 
   }
